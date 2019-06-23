@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ElectronService } from '../../providers/electron.service';
+import { faWindowMinimize, faWindowMaximize } from '@fortawesome/free-regular-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-desktop-menu',
@@ -7,6 +9,10 @@ import { ElectronService } from '../../providers/electron.service';
   styleUrls: ['./desktop-menu.component.scss']
 })
 export class DesktopMenuComponent implements OnInit {
+
+  faWindowMinimize = faWindowMinimize;
+  faWindowMaximize = faWindowMaximize;
+  faTimes = faTimes;
 
   constructor(public electronService: ElectronService) { }
 

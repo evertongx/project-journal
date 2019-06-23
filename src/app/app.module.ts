@@ -20,6 +20,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { DesktopMenuComponent } from './components/desktop-menu/desktop-menu.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -43,7 +45,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         useFactory: (HttpLoaderFactory),
         deps: [HttpClient]
       }
-    })
+    }),
+    FontAwesomeModule
   ],
   providers: [ElectronService],
   bootstrap: [AppComponent]

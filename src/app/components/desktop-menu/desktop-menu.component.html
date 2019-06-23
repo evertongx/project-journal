@@ -1,8 +1,15 @@
 <div class="toolbar">
 
   <div class="window-actions">
-    <span class="close" (click)="onClickClose()">x</span>
-    <span (click)="onClickMinimize()">_</span>
+    <span class="close" (click)="onClickClose()">
+      <fa-icon [icon]="faTimes"></fa-icon>
+    </span>
+    <span (click)="onClickUnmaximize()">
+      <fa-icon [icon]="faWindowMaximize"></fa-icon>
+    </span>
+    <span (click)="onClickMinimize()">
+      <fa-icon [icon]="faWindowMinimize"></fa-icon>
+    </span>
   </div>
   
 </div>
