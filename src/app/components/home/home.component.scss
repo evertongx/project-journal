@@ -1,0 +1,21 @@
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background: url(../../../assets/background.jpg) no-repeat center fixed; */
+  background: #fffff1;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+
+  .title {
+    color: #331;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+
+    border: solid 1px #331;
+  }
+
+}

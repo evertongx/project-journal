@@ -1,0 +1,32 @@
+.toolbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: transparent;
+    height: 18px;
+    margin: 5px;
+    -webkit-app-region: drag;
+}
+
+.window-actions > span {
+    float: right;
+    text-align: center;
+    border: solid 1px #331;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    -webkit-app-region: no-drag;
+}
+
+.window-actions > span:hover {
+    background: #331;
+    border-color: white;
+    color: white;
+    cursor: default;
+}
+
+.window-actions > span.close:hover {
+    background: rgb(255, 42, 42);
+}
